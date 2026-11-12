@@ -1,0 +1,89 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  overflow-y: auto;
+  background: rgba(23, 22, 22, 0.7);
+  animation: modal-fade 0.2s ease;
+}
+
+.modal-dialog {
+  position: relative;
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  outline: none;
+  animation: modal-rise 0.25s ease;
+}
+
+.modal-sm {
+  max-width: 440px;
+  padding: 40px 32px 32px;
+}
+
+.modal-lg {
+  max-width: 960px;
+  padding: 0;
+  background: #000;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--dark);
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.modal-close:hover {
+  background: var(--gray-bg);
+}
+
+.modal-lg .modal-close {
+  top: -40px;
+  right: 0;
+  color: var(--white);
+}
+
+.modal-lg .modal-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@keyframes modal-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes modal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 0;
+    align-items: end;
+  }
+
+  .modal-sm {
+    max-width: none;
+    padding: 40px 20px 24px;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .modal-lg {
+    border-radius: 0;
+  }
+}

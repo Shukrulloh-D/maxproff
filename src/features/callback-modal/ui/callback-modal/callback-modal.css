@@ -1,0 +1,32 @@
+.callback-form,
+.callback-success {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.callback-success {
+  align-items: center;
+  text-align: center;
+}
+
+.callback-success-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 50%;
+}
+
+.callback-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.callback-text {
+  margin-top: -6px;
+  color: var(--muted);
+}

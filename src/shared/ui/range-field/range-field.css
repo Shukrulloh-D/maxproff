@@ -1,0 +1,51 @@
+.range-field-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.range-field-label {
+  font-weight: 700;
+}
+
+.range-field-value {
+  font-weight: 500;
+}
+
+.range-field-input {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    var(--navy) var(--fill),
+    #d9d9d9 var(--fill)
+  );
+  border-radius: 2px;
+  outline: none;
+  appearance: none;
+}
+
+.range-field-input::-webkit-slider-thumb {
+  width: 18px;
+  height: 18px;
+  background: var(--navy);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--navy);
+  appearance: none;
+}
+
+.range-field-input::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--navy);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--navy);
+}
+
+.range-field-input:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(45, 75, 114, 0.35);
+}

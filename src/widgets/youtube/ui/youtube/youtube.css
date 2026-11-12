@@ -1,0 +1,23 @@
+.youtube-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.youtube-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+@media (max-width: 1000px) {
+  .youtube-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube-grid {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,149 @@
+.tariff-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid #e6e6e6;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.tariff-card:hover {
+  box-shadow: 0 14px 32px rgba(23, 22, 22, 0.14);
+  transform: translateY(-4px);
+}
+
+.tariff-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #e9eef4;
+}
+
+.tariff-card-photo {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  background: #cfd8e3;
+  border-radius: 50%;
+}
+
+.tariff-card-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.tariff-card-duration {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.tariff-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.tariff-card-text {
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.tariff-card-works {
+  position: relative;
+  max-height: 176px;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.tariff-card-works::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 56px;
+  pointer-events: none;
+  background: linear-gradient(transparent, var(--white));
+  transition: opacity 0.2s;
+}
+
+.tariff-card-works-open {
+  max-height: 760px;
+}
+
+.tariff-card-works-open::after {
+  opacity: 0;
+}
+
+.tariff-card-group + .tariff-card-group {
+  margin-top: 10px;
+}
+
+.tariff-card-group-title {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tariff-card-work {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.tariff-card-work .icon {
+  color: var(--navy);
+}
+
+.tariff-card-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: auto;
+  padding: 14px 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.tariff-card-toggle:hover {
+  color: var(--green-hover);
+}
+
+.tariff-card-toggle .icon {
+  transition: transform 0.2s;
+}
+
+.tariff-card-arrow-up {
+  transform: rotate(180deg);
+}
+
+.tariff-card-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tariff-card-price s {
+  font-size: 10px;
+  color: #9a9a9a;
+}
+
+.tariff-card-price strong {
+  font-size: 14px;
+  color: var(--green);
+}

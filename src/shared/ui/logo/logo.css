@@ -1,0 +1,15 @@
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+}
+
+.logo span {
+  color: var(--green);
+}
+
+.logo-light {
+  color: var(--white);
+}

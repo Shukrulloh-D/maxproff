@@ -1,0 +1,23 @@
+.slider-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-dot {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.slider-dot::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--navy);
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.slider-dot-active::before {
+  background: var(--navy);
+}

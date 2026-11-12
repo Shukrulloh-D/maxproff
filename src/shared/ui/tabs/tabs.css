@@ -1,0 +1,89 @@
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  flex: 1 0 auto;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.tabs-filled .tab {
+  height: 36px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #e2e2e2;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.tabs-filled .tab:hover {
+  background: #d6d6d6;
+}
+
+.tabs-filled .tab-active,
+.tabs-filled .tab-active:hover {
+  color: var(--white);
+  background: var(--navy);
+}
+
+.tabs-timeline {
+  gap: 0;
+  padding-bottom: 4px;
+}
+
+.tabs-timeline::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+  left: 0;
+  height: 2px;
+  background: #e0e0e0;
+}
+
+.tabs-timeline .tab {
+  position: relative;
+  padding: 0 12px 28px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tabs-timeline .tab::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--white);
+  border: 2px solid #cfcfcf;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.tabs-timeline .tab:hover::after {
+  border-color: var(--navy);
+}
+
+.tabs-timeline .tab-active {
+  font-weight: 700;
+}
+
+.tabs-timeline .tab-active::after {
+  background: var(--navy);
+  border-color: var(--navy);
+}
