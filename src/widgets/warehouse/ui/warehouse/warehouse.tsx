@@ -31,12 +31,12 @@ export const Warehouse = () => (
 
     <div className="warehouse-photos">
       <img
-        src="/images/warehouse/tiles.jpg"
+        src="/images/tiles.png"
         alt="Образцы плитки в шоуруме"
         loading="lazy"
       />
       <img
-        src="/images/warehouse/fabrics.jpg"
+        src="/images/fabrics.png"
         alt="Образцы тканей в шоуруме"
         loading="lazy"
       />

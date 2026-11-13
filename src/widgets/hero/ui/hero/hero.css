@@ -6,7 +6,7 @@
       rgba(255, 255, 255, 0.94) 36%,
       rgba(255, 255, 255, 0) 70%
     ),
-    url("/images/hero.jpg") center / cover no-repeat,
+    url("/images/hero.png") center / cover no-repeat,
     var(--gray-bg);
 }
 
@@ -65,7 +65,7 @@
   .hero {
     background:
       linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-      url("/images/hero.jpg") center / cover no-repeat,
+      url("/images/hero.png") center / cover no-repeat,
       var(--gray-bg);
   }
 

@@ -39,7 +39,7 @@ export const Suppliers = () => {
             {BRANDS.map((brand) => (
               <li key={brand.id}>
                 <img
-                  src={`/images/brands/${brand.id}.png`}
+                  src={`/images/${brand.id}.png`}
                   alt={brand.name}
                   loading="lazy"
                 />

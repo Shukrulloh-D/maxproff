@@ -11,7 +11,7 @@ export const QualityControl = () => (
     <div className="quality-layout">
       <img
         className="quality-photo"
-        src="/images/quality/builders.jpg"
+        src="/images/builders.png"
         alt="Строители в защитных касках"
         loading="lazy"
       />

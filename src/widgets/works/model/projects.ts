@@ -56,7 +56,7 @@ const build = (type: RepairType, rows: ProjectRow[]): Project[] =>
     works: WORKS,
     photos: Array.from(
       { length: 5 },
-      (_, number) => `/images/works/${type}-${number + 1}.jpg`,
+      (_, number) => `/images/${type}-${number + 1}.png`,
     ),
   }));
 

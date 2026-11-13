@@ -7,7 +7,7 @@ export const REVIEWS: Video[] = [
   {
     id: DEMO_VIDEO_ID,
     title: "Отзыв о капитальном ремонте",
-    preview: "/images/reviews/1.jpg",
+    preview: "/images/1.png",
     category: "Капитальный ремонт",
     subtitle: "2-х комнатная квартира",
     address: ADDRESS,
@@ -15,7 +15,7 @@ export const REVIEWS: Video[] = [
   {
     id: DEMO_VIDEO_ID,
     title: "Отзыв о капитальном ремонте",
-    preview: "/images/reviews/2.jpg",
+    preview: "/images/2.png",
     category: "Капитальный ремонт",
     subtitle: "2-х комнатная квартира",
     address: ADDRESS,
@@ -23,7 +23,7 @@ export const REVIEWS: Video[] = [
   {
     id: DEMO_VIDEO_ID,
     title: "Отзыв о капитальном ремонте",
-    preview: "/images/reviews/3.jpg",
+    preview: "/images/3.png",
     category: "Капитальный ремонт",
     subtitle: "3-х комнатная квартира",
     address: ADDRESS,
@@ -31,7 +31,7 @@ export const REVIEWS: Video[] = [
   {
     id: DEMO_VIDEO_ID,
     title: "Отзыв о капитальном ремонте",
-    preview: "/images/reviews/4.jpg",
+    preview: "/images/4.png",
     category: "Капитальный ремонт",
     subtitle: "3-х комнатная квартира",
     address: ADDRESS,

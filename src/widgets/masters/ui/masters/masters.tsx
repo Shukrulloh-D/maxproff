@@ -7,7 +7,7 @@ import { SliderArrow } from "@/shared/ui/slider-arrow";
 import { SliderDots } from "@/shared/ui/slider-dots";
 import "./masters.css";
 
-const PHOTOS = [1, 2, 3, 4, 5].map((number) => `/images/masters/${number}.jpg`);
+const PHOTOS = [1, 2, 3, 4, 5].map((number) => `/images/${number}.png`);
 
 const FACTS = [
   "Обучение мастеров каждые 6 месяцев",
@@ -21,7 +21,7 @@ const FACTS = [
 const VIDEO = {
   id: "M7lc1UVf-VE",
   title: "Наши мастера в работе",
-  preview: "/images/masters/video.jpg",
+  preview: "/images/masters/video.png",
 };
 
 export const Masters = () => {
