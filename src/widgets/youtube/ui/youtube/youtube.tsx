@@ -9,7 +9,7 @@ import "./youtube.css";
 const VIDEOS: Video[] = [1, 2, 3, 4, 5, 6].map((number) => ({
   id: "M7lc1UVf-VE",
   title: `Видео ${number} с канала МаксПрофф`,
-  preview: `/images/youtube/${number}.jpg`,
+  preview: `/images/youtube/${number}.pg`,
 }));
 
 export const YouTube = () => {

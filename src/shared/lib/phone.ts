@@ -16,7 +16,7 @@ export const formatPhone = (raw: string): string => {
     digits.slice(8, 10),
   ];
 
-  let result = `+7 (${code}`;
+  let result = `+992 (${code}`;
   if (code.length === 3) result += ")";
   if (first) result += ` ${first}`;
   if (second) result += `-${second}`;

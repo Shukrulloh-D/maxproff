@@ -36,7 +36,7 @@ export const Team = () => {
         <article key={employee.id} className="team-slide" {...swipe}>
           <img
             className="team-photo"
-            src={`/images/team/${employee.id}.jpg`}
+            src={`/images/${employee.id}.pg`}
             alt={employee.name}
             draggable={false}
           />

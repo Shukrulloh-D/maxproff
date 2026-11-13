@@ -21,7 +21,7 @@ const FACTS = [
 const VIDEO = {
   id: "M7lc1UVf-VE",
   title: "Наши мастера в работе",
-  preview: "/images/masters/video.png",
+  preview: "/images/video.png",
 };
 
 export const Masters = () => {

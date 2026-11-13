@@ -67,7 +67,7 @@ export const TARIFFS: Tariff[] = [
     ],
     oldPrice: 6446,
     price: 4950,
-    image: "/images/tariffs/capital.png",
+    image: "/images/cosmetic.png",
   },
   {
     id: "turnkey",
@@ -112,7 +112,7 @@ export const TARIFFS: Tariff[] = [
     ],
     oldPrice: 6990,
     price: 5450,
-    image: "/images/tariffs/turnkey.png",
+    image: "/images/cosmetic.png",
   },
   {
     id: "designer",
@@ -157,6 +157,6 @@ export const TARIFFS: Tariff[] = [
     ],
     oldPrice: 9890,
     price: 7500,
-    image: "/images/tariffs/designer.png",
+    image: "/images/cosmetic.png",
   },
 ];
